@@ -3,7 +3,7 @@
 ## Índice
 
 
-* [Descrição do Projeto 📖](#descrição-do-projeto)
+* [📖 Descrição do Projeto 📖](#descrição-do-projeto)
 * [Status do Projeto](#status-do-Projeto)
 * [Metodologias ](#metodologias)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
@@ -13,7 +13,7 @@
 <h2 id="descrição-do-projeto">Descrição do projeto</h2>
 
 <p>
-E-commerce voltado para estudos de Front/Back-end usando as tecnologias  mais recentes utilizadas no mercado de desenvolvimento web.
+E-commerce voltado para estudos de Front/Back-end usando as tecnologias mais recentes utilizadas no mercado de desenvolvimento web.
 </p>
 
 <h2 id="status-do-Projeto">Status do projeto</h2>
