@@ -29,4 +29,4 @@ const sequelize =  new Sequelize(
 
 sequelize.query("CREATE EXTENSION IF NOT EXISTS unaccent");
 
-module.exports = sequelize;
+export default sequelize;

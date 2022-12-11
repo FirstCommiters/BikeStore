@@ -10,4 +10,4 @@ for (const router in routesList) {
     routes.use(routesList[router]);
 }
 
-module.exports = routes;
+export default routes;
