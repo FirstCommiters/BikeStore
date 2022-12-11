@@ -2,6 +2,7 @@ import { createServer } from 'http';
 import express from 'express';
 import * as dotenv from 'dotenv';
 import routes from './routes';
+const { sequelize } = require('./models');
 
 dotenv.config();
 

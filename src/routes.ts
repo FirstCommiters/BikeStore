@@ -6,8 +6,8 @@ const routesList = {
 }
 
 
-for (const router in routesList) {
-    routes.use(routesList[router]);
-}
+// for (const router in routesList) {
+//     routes.use(routesList[router]);
+// }
 
 export default routes;
