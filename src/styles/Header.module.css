@@ -20,3 +20,26 @@
     font-size: 18px;
     line-height: 32px;
 }
+
+
+@media (max-width: 800px) {
+    .header nav {
+       
+        display: block;
+    }
+
+    .header nav ul {
+        flex-wrap: wrap;
+        
+    }
+
+    .header nav ul li a {
+        padding: 12px 16px;
+        background-color: #111111;
+        border-radius: 4px;
+    }
+
+    img {
+        margin-bottom: 16px;
+    }
+}
