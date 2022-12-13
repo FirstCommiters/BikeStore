@@ -5,6 +5,8 @@ import styles from '../styles/Footer.module.css'
 import FacebookIcon from '../icons/facebook.svg'
 import YoutubeIcon from '../icons/youtube.svg'
 import InstagramIcon from '../icons/instagram.svg'
+
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>

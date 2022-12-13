@@ -1,0 +1,87 @@
+.form {
+    width: 280px;
+   
+}
+
+.form > img {
+    margin-bottom: 12px;
+    width: 30px;
+    height: 30px;
+    display: block;   
+    margin: 0 auto;
+}
+
+.form h1 {
+    color: black;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.form span {
+    text-align: end;
+    color: #707070;
+    font-size: 10px;
+    line-height: 1px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 24px;
+}
+
+.divisor {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.divisor p {
+    color: black;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.divisor div {
+    width: 127px;
+    height: 1px;
+    background: #dfdfdf;
+}
+
+.socialLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.formFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formFooter p {
+    margin-bottom: 8px;
+    color: #404040;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.createNewAccount {
+    background: #EDEDED;
+    padding: 8px 48px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #404040;
+    
+    
+}

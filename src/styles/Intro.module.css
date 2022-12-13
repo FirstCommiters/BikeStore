@@ -1,0 +1,48 @@
+.intro {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 100%;
+    background: #121212;
+}
+
+.introGrid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.introGrid p {
+    margin-bottom: 8px;
+    color: #808080;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.introGrid h1 {
+    color: white;
+    font-size: 56px;
+    line-height: 68px;
+    font-weight: 600;
+}
+
+.introGrid h1 span {
+    color: #F2A60C;
+}
+
+@media (max-width: 800px) {
+    .introGrid h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .introGrid p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 600px) {
+    .intro {
+         display: none;
+    }
+}

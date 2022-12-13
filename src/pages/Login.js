@@ -1,8 +1,19 @@
 import React from 'react'
+import Intro from '../components/Intro'
+import Layout from '../components/Layout'
+import styles from '../styles/Login.module.css'
+import FormLogin from '../components/form/FormLogin'
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <section className={styles.login}>
+      <Intro text="Bike-Store" title="Fazer login"/>
+      <Layout>  
+        <div className={styles.form}>
+          <FormLogin/>
+        </div> 
+      </Layout>
+    </section>
   )
 }
 
