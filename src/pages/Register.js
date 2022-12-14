@@ -1,7 +1,7 @@
 import React from 'react'
 import FormRegister from '../components/form/FormRegister'
 import Intro from '../components/Intro'
-import Layout from '../components/Layout'
+import Layout from '../components/container/Layout'
 import styles from '../styles/Register.module.css'
 
 const Register = () => {

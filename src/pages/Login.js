@@ -1,6 +1,6 @@
 import React from 'react'
 import Intro from '../components/Intro'
-import Layout from '../components/Layout'
+import Layout from '../components/container/Layout'
 import styles from '../styles/Login.module.css'
 import FormLogin from '../components/form/FormLogin'
 

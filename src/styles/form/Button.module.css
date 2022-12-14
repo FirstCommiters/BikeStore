@@ -10,4 +10,9 @@
     line-height: 21px;
     border: none;
     margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.button:disabled {
+    background-color: #989898;
 }

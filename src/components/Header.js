@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Logo from '../images/BikeStore.svg'
 import styles from '../styles/Header.module.css'
-import Layout from './Layout'
+import Layout from './container/Layout'
 
 const Header = () => {
   return (

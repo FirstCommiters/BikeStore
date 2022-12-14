@@ -6,21 +6,26 @@ import { NavLink } from 'react-router-dom'
 import styles from '../../styles/form/FormRegister.module.css'
 
 const FormRegister = () => {
+
+  
   const [error, setError] = useState(false)
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [verifyPassword, setVerifyPassword] = useState('')
+  const [loading, setLoading] = useState(false)
 
 
-  // Verifica Tamanho da senha
-  function handleBlur(e) {
+
+
+  // Verifica Tamanho da senha 
+  function handleBlur() {
     if(password.length < 12) {
       setError(true)
     } else {
       setError(false)
     }
-
+    // Verificando se as senhas são iguais
     if(verifyPassword !== password) {
       setError(true)
     } else {
@@ -29,8 +34,9 @@ const FormRegister = () => {
 
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
+    setLoading(true)
     if(password !== verifyPassword) {
       console.log('As senhas precisam ser iguais')
       setError(true)
@@ -41,6 +47,8 @@ const FormRegister = () => {
     if(password === verifyPassword) {
       console.log('conta criada com sucesso')
     }
+
+    setLoading(false)
   }
 
 
@@ -80,7 +88,7 @@ const FormRegister = () => {
         required/>  
         {error && password !== verifyPassword && password.length >= 12 && <p>As senhas não coincidem</p>}
 
-        <Button>Sign in</Button>
+        {loading ? <Button disabled={true}>Carregando...</Button> : <Button>Sign in</Button>}
         <NavLink className={styles.haveAnAccount} to='/login'>Already have an account?</NavLink>
     </form>
   )

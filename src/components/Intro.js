@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from './Layout'
+import Layout from './container/Layout'
 import iconDeco from '../icons/introDeco.svg'
 import styles from '../styles/Intro.module.css'
 

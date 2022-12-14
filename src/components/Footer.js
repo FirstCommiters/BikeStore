@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../images/BikeStore.svg'
-import Layout from './Layout'
+import Layout from './container/Layout'
 import styles from '../styles/Footer.module.css'
 import FacebookIcon from '../icons/facebook.svg'
 import YoutubeIcon from '../icons/youtube.svg'
