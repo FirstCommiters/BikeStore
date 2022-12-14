@@ -4,6 +4,14 @@
     width: 280px;
 }
 
+.form p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #FF0000;
+    position: relative;
+    bottom: 12px;
+}
+
 .form > img {
     margin-bottom: 12px;
     width: 30px;
