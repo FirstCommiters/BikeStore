@@ -1,0 +1,126 @@
+.segurosSection {
+    background-color: #121212;
+    padding-bottom: 120px;
+    padding-top: 60px;
+}
+
+.segurosSection .segurosTitle {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+.segurosSection .segurosTitle span {
+    color: #FFBF00;
+}
+
+.segurosSection ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.segurosSection ul li {
+    width: 560px;
+    padding: 32px 32px 32px 64px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.segurosSection ul li header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.segurosSection ul li header h1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 30px;
+    color: #808080;
+    margin-bottom: 64px;
+}
+
+.segurosSection ul li header h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.segurosSection ul li header h2 span{
+    display: block;
+    font-weight: 600;
+    color: #B3B3B3;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: end;
+}
+
+.segurosSection ul li p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.segurosSection ul li p::before {
+    content: '';
+    width: 12px;
+    height: 9px;
+    display: inline-block;
+    margin-right: 8px;
+    background: url(../../icons/correctIcon.png);
+}
+
+.segurosSection button {
+    margin-top: 12px;
+    background: #2E2E2E;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 16px 32px;
+    color: #B3B3B3;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.segurosSection .goldenTitle {
+    background: linear-gradient(180deg, #FFBF00 0%, #F2A60C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 30px;
+}
+
+.segurosSection .goldenButton {
+    background: linear-gradient(180deg, #FFBF00 0%, #F2A60C 100%);
+    border-radius: 5px;
+    color: #332200;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@media (max-width: 1000px) {
+    .segurosSection ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .segurosSection ul li  {
+        width: 100%;
+        padding-left: 32px;
+    }
+
+    
+
+   
+}

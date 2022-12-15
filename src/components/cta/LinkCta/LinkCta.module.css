@@ -1,0 +1,20 @@
+.linkCta {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #FFBF00 0%, #F2A60C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    position: relative;
+}
+
+.linkCta::after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 100%;
+    display: block;
+    background: linear-gradient(180deg, #FFBF00 0%, #F2A60C 100%);
+}
