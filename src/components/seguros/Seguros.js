@@ -1,13 +1,13 @@
 import React from 'react'
 import Layout from '../container/Layout'
-import CorrectIcon from '../../icons/correctIcon.png'
 import styles from './Seguros.module.css'
 
-const Seguros = () => {
+const Seguros = ({title}) => {
   return (
     <section className={styles.segurosSection}>
         <Layout>
-            <h1 className={styles.segurosTitle}>seguros<span>.</span></h1>
+
+            {title && <h1 className={styles.segurosTitle}>{title}<span>.</span></h1>}
             <ul>
                 <li>
                     <header>

@@ -2,20 +2,21 @@ import React, { useState } from 'react'
 import Button from './Button'
 import bikeStoreLogoIcon from '../../icons/bikestoreLogoIcon.svg'
 import Input from './Input'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Navigate } from 'react-router-dom'
 import styles from '../../styles/form/FormRegister.module.css'
 
 const FormRegister = () => {
 
   
   const [error, setError] = useState(false)
+
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [verifyPassword, setVerifyPassword] = useState('')
+
   const [loading, setLoading] = useState(false)
-
-
+  const [data, setData] = useState(null)
 
 
   // Verifica Tamanho da senha 
@@ -40,15 +41,39 @@ const FormRegister = () => {
     if(password !== verifyPassword) {
       console.log('As senhas precisam ser iguais')
       setError(true)
+      setLoading(false)
+      return;
     } else {
       setError(false)
     }
 
     if(password === verifyPassword) {
-      console.log('conta criada com sucesso')
+
+      const dados = {
+        name: username,
+        email: email,
+        password: password,
+        verifyPassword: verifyPassword
+      }
+
+      const options = {
+        method: 'POST',
+        body: JSON.stringify(dados),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }
+
+      const response = await fetch('http://localhost:3030/auth/register', options)
+      const json = await response.json()
+      setData({...json})
+      console.log(data)
+      localStorage.setItem('token', data.token)
+      window.location.replace("/")
     }
 
     setLoading(false)
+
   }
 
 
@@ -89,6 +114,7 @@ const FormRegister = () => {
         {error && password !== verifyPassword && password.length >= 12 && <p>As senhas não coincidem</p>}
 
         {loading ? <Button disabled={true}>Carregando...</Button> : <Button>Sign in</Button>}
+        {data && <p className={styles.createAccount}>Conta criada com sucesso!</p>}
         <NavLink className={styles.haveAnAccount} to='/login'>Already have an account?</NavLink>
     </form>
   )

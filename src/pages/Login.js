@@ -5,6 +5,21 @@ import styles from '../styles/Login.module.css'
 import FormLogin from '../components/form/FormLogin'
 
 const Login = () => {
+
+  const [token, setToken] = React.useState(null)
+
+  const localStorageToken = localStorage.getItem('token')
+
+  React.useEffect(()=> {
+    setToken(localStorageToken)
+
+    if(token) {
+      window.location.replace("/")
+    }
+  }, [localStorageToken, token])
+
+
+
   return (
     <section className={styles.login}>
       <Intro text="Bike-Store" title="Fazer login"/>

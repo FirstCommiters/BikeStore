@@ -12,7 +12,7 @@ const Home = () => {
       <Products/>
       <Differential/>
       <Partners/>
-      <Seguros/>
+      <Seguros title="seguros"/>
     </>
   )
 }

@@ -1,0 +1,44 @@
+.advantages {
+    background-color: #000000;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.advantages h1 {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 68px;
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+.advantages h1 span {
+    color: #FFBF00;
+}
+
+.advantages ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.advantages ul li img {
+    width: 32px;
+    height: 32px;
+}
+
+.advantages ul li h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.advantages ul li p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #808080;
+}

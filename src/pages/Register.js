@@ -5,6 +5,19 @@ import Layout from '../components/container/Layout'
 import styles from '../styles/Register.module.css'
 
 const Register = () => {
+
+  const [token, setToken] = React.useState(null)
+
+  const localStorageToken = localStorage.getItem('token')
+
+  React.useEffect(()=> {
+    setToken(localStorageToken)
+
+    if(token) {
+      window.location.replace("/")
+    }
+  }, [localStorageToken, token])
+
   return (
     <section>
         <Intro text="Bike-store" title="Cadastre-se"/>
