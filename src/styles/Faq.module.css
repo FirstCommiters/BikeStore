@@ -1,3 +1,77 @@
 .faq {
     background: white;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.faq h1 {
+    padding-bottom: 100px;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 68px;
+}
+
+.faq h1 span {
+    color: #FFBF00;
+}
+
+.faq dl > div {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.faq dl > div:nth-child(odd) {
+    background: #EDEDED;
+}
+
+.faq dt {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.faq dt::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    background-color: #FFBF01;
+}
+
+.faq dt::after {
+    content: "";
+    background-image: url('../icons/arrowDown.png');
+    width: 14px;
+    height: 10px;
+    display: inline-block;
+    transition: .3s;
+}
+
+.faq dt:hover::after {
+    transform: rotate(180deg);
+}
+
+.faq dd {
+    padding-left: 20px;
+    padding-top: 16px;
+    max-width: 80ch;
+}
+
+@media (max-width: 800px) {
+    .faq {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }    
+
+    .faq h1 {
+        padding-bottom: 40px;
+        font-size: 40px;
+        line-height: 50px;
+    }
 }

@@ -18,7 +18,7 @@ const Header = () => {
     <header className={styles.header}>
       <Layout>
         <nav>
-          <div>
+        <div>
             <NavLink to="/" end>
               <img src={Logo} alt="Bikestore Logo" />
             </NavLink>

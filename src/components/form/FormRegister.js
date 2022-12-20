@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Button from './Button'
 import bikeStoreLogoIcon from '../../icons/bikestoreLogoIcon.svg'
 import Input from './Input'
-import { NavLink, Navigate } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import styles from '../../styles/form/FormRegister.module.css'
 
 const FormRegister = () => {
@@ -66,9 +66,8 @@ const FormRegister = () => {
 
       const response = await fetch('http://localhost:3030/auth/register', options)
       const json = await response.json()
-      setData({...json})
-      console.log(data)
-      localStorage.setItem('token', data.token)
+      setData(json)
+      localStorage.setItem('token', json.token)
       window.location.replace("/")
     }
 

@@ -8,14 +8,53 @@ import { NavLink } from 'react-router-dom'
 import Button from './Button'
 
 const FormLogin = () => {
+  const [email, setEmail] = React.useState('')
+  const [password, setPassword] = React.useState('')
+  const [loading, setLoading] = React.useState(false)
+  async function handleSubmit(e) {
+    e.preventDefault()
+    setLoading(true)
+
+    const dados = {
+      email: email,
+      password: password,
+    }
+
+    const options = {
+      method: 'POST',
+      body: JSON.stringify(dados),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }
+
+    const response = await fetch('http://localhost:3030/auth/login', options)
+    const json = await response.json()
+    localStorage.setItem('token', json.token)
+    setLoading(false)
+    window.location.replace("/")
+  }
+
+
   return (
-    <form className={styles.form}>
+    <form className={styles.form} onSubmit={handleSubmit}>
         <img src={bikeStoreLogoIcon} alt="BikeStore Icone"/>
         <h1>Sign In</h1>
-        <Input type="email" placeholder="aaron@column.com" required/>
-        <Input type="password" placeholder="your password" required/>
+        <Input
+        onChange={(event) => setEmail(event.target.value)}
+        type="email" 
+        placeholder="aaron@column.com" 
+        required/>
+
+        <Input
+        onChange={(event) => setPassword(event.target.value)}
+        type="password" 
+        placeholder="your password" 
+        required/>
+
+
         <span>Recovery password</span>
-        <Button>Sign in</Button>
+        {loading ? <Button disabled={true}>Carregando...</Button> : <Button>Sign in</Button>}
         <div className={styles.divisor}>
           <div></div>
           <p>Or</p>

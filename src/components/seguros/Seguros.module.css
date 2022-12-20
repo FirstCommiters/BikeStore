@@ -115,6 +115,11 @@
 }
 
 @media (max-width: 600px) {
+    .segurosSection {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+
     .segurosSection ul li  {
         width: 100%;
         padding-left: 32px;

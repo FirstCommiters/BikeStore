@@ -19,7 +19,6 @@ const Login = () => {
   }, [localStorageToken, token])
 
 
-
   return (
     <section className={styles.login}>
       <Intro text="Bike-Store" title="Fazer login"/>
