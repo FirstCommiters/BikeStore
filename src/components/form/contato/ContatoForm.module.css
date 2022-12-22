@@ -1,0 +1,121 @@
+.ContatoForm {
+    background: #121212;
+    box-shadow: inset 0 -80px #EDEDED;
+    padding-top: 60px;
+}
+.display {
+    display: flex;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)
+}
+.blackSide {
+    background-color: #000;
+    max-width: 460px;
+    padding: 60px 120px 100px 60px;
+    border-radius: 5px;
+}
+.blackSide h2{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.blackSide ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.blackSide ul li img {
+    margin-top: 6px;
+}
+
+.blackSide ul li p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #B3B3B3;
+    letter-spacing: 0.015em;
+}
+
+.blackSide > div {
+    margin-top: 48px;
+    display: flex;
+    gap: 32px;
+}
+
+.whiteSide {
+    max-width: 700px;
+    padding: 60px 60px;
+    background-color: white;
+    border-radius: 0px 5px 5px 0;
+}
+
+.whiteSide ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+}
+
+
+
+.whiteSide ul li label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #121212;
+}
+
+.whiteSide ul .email {
+    grid-column: 1/-1;
+}
+
+.whiteSide ul .email input{
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    background: #EDEDED;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    position: relative;
+}
+
+.whiteSide ul .email input::placeholder {
+    color: #707070;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    top: 8px;
+}
+
+.whiteSide ul .textarea {
+    grid-column: 1/-1;
+}
+
+.whiteSide ul li textarea {
+    width: 100%;
+    height: 135px;
+    padding: 12px;
+    width: 100%;
+    background: #EDEDED;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    position: relative;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.whiteSide ul .email textarea::placeholder {
+    color: #707070;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    position: absolute;
+    top: 8px;
+}

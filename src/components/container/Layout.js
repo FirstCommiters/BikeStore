@@ -1,8 +1,9 @@
 import styles from '../../styles/Layout.module.css'
 
-const Layout = ({children}) => {
+const Layout = ({children, displayFlex}) => {
+  
   return (
-    <div className={styles.container}>{children}</div>
+    <div className={`${styles.container}`}>{children}</div>
   )
 }
 
