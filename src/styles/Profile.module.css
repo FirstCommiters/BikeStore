@@ -1,0 +1,105 @@
+.profile {
+    background: linear-gradient(#121212 600px, #EDEDED 0px);
+    padding-bottom: 160px;
+}
+
+.profile .container {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    margin-top: 60px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    
+}
+
+.profile .container .blackSide {
+    padding: 60px;
+    background-color: #000;
+    border-radius: 5px 0 0 5px;
+}
+
+.profile .container .blackSide h1 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.profile .container .blackSide span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.015em;
+    color: #B3B3B3;
+}
+
+.profile .container .blackSide ul {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile .container .blackSide ul li {
+    
+    padding: 12px;
+    background: #121212;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.profile .container .blackSide ul li button {
+    color: #B3B3B3;
+    background: none;
+    border: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.015em;
+    
+}
+
+.profile .container .blackSide ul li::before {
+    content: '';
+    width: 20px;
+    height: 14px;
+    display: inline-block;
+    background-image: url('../icons/cart.png');
+}
+
+/* whiteSide */
+
+.profile .container .whiteSide {
+    padding: 60px;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.profile .container .whiteSide .content {
+    margin-top: 44px;
+}
+
+.profile .container .whiteSide .content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.profile .container .whiteSide .content ul li {
+    background: #DEDEDE;
+    height: 132px;
+    width: 100%;
+}
+
+.profile .container .whiteSide .content span {
+    text-align: end;
+    display: block;
+    margin-top: 40px;
+    color: #404040;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}

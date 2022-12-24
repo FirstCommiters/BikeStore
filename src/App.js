@@ -7,6 +7,8 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import Seguros from './pages/Seguros'
 import Contato from './pages/Contato'
+import Profile from './pages/Profile'
+import Bicicletas from './pages/Bicicletas'
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
             <Route path='/register' element={<Register/>}/>
             <Route path='/seguros' element={<Seguros/>}/>
             <Route path='/contato' element={<Contato/>}/>
+            <Route path='/bicicletas' element={<Bicicletas/>}/>
+            <Route path="/perfil" element={<Profile/>} />
           </Routes>
         <Footer/>
 

@@ -18,12 +18,16 @@
 
 .locais .maps {
     display: flex;
-    gap: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .locais .maps li {
     background-color: white;
     border-radius: 5px;
+    max-width: 560px;
 }
 
 .locais .maps li h2 {
@@ -88,3 +92,13 @@
     letter-spacing: 0.015em;
 }
 
+@media (max-width: 600px) {
+    .locais .maps img{
+        max-width: 100%;
+    }
+
+    .locais .maps li ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
